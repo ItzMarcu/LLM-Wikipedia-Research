@@ -21,7 +21,7 @@ form.addEventListener('submit', async (event) => {
 
         const data = await response.json();
         textArea.style.whiteSpace = "pre-line";
-        textArea.textContent = data.analisi;
+        textArea.textContent = data;
     } catch (error) {
         textArea.innerHTML = `<span style="color: #e74c3c;">❌ Si è verificato un errore: ${error.message}</span>`;
     } finally {
