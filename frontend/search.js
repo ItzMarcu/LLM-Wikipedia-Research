@@ -15,7 +15,7 @@ form.addEventListener('submit', async (event) => {
     btn.disabled = true;
 
     try {
-        const response = await fetch(`http://127.0.0.1:8000/q?parametro=${encodeURIComponent(query)}`);
+        const response = await fetch(`https://llm-wikipedia-research.onrender.com/q?parametro=${encodeURIComponent(query)}`);
 
         if (!response.ok) throw new Error("Errore del server ${response.status}");
 
