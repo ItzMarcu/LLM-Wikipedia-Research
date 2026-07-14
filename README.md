@@ -68,16 +68,8 @@ OPENAI_API_KEY=your_api_key_here
 * **Start the backend:**
   ```bash
   # Inside backend/
-  python main.py  # or uvicorn main:app --reload depending on your setup
+  uvicorn wikipedia:app --reload
   ```
-* **Start the frontend:**
-  Navigate to the `frontend/` directory and open `index.html` or run your local dev server:
-  ```bash
-  cd ../frontend
-  # e.g., if using npm:
-  npm run dev
-  ```
-
 ## 📝 License
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
