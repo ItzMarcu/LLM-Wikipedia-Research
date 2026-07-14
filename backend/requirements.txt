@@ -1,0 +1,6 @@
+fastapi
+uvicorn
+bs4
+requests
+groq
+python-dotenv

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="it">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wikipedia LLM Search</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="search-container">
+        <h1>Cerca su Wikipedia</h1>
+
+        <form id="searchForm" class="search-form" onsubmit="return false;">
+            <div class="form-group">
+                <label for="parametro">Termine da cercare:</label>
+                <input type="text" id="parametro" name="parametro" placeholder="Es. Python, Roma, Albert Einstein..."
+                    required>
+            </div>
+
+            <button type="submit" id="submitBtn">Analizza con LLM</button>
+        </form>
+
+        <div id="resultContainer" class="result-container">
+        </div>
+    </div>
+</body>
+<script src="search.js"></script>
+
+</html>
